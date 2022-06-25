@@ -13,6 +13,7 @@ public class ReadFile {
 
             String line = null;
 
+            // read one line if it existed
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
             }
