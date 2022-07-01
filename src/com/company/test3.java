@@ -15,13 +15,19 @@ public class test3 {
             i++;
         }
 */
-
+/*
         int x,y,z;
         x = (int) Math.round(42.2);
         y = Math.min(25,10);
         z = Math.abs(-343);
         System.out.print(z);
+*/
 
+        String toTest  = "What is blue + yellow?/green";
+        String[] result = toTest.split("/");
+        for (String token:result) {
+            System.out.println(token);
+        }
 
 
     }
