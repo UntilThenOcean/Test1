@@ -1,36 +1,55 @@
 package com.company;
 
-public class Song {
-
+public class Song implements Comparable <Song>
+{
     String title;
     String artist;
     String rating;
     String bpm;
 
-    Song(String t, String a, String r, String b) {
+
+    public Song(String t, String a, String r, String b) {
         title = t;
         artist = a;
         rating = r;
         bpm = b;
     }
-
-    public String getTitle() {
-        return getTitle();
+    public boolean equals(Object aSong) {
+        Song s = (Song) aSong;
+        return getTitle().equals(s.getTitle());
     }
 
-    public String getArtist() {
+    public int hashCode() {
+        return title.hashCode();
+    }
+
+    public int compareTo(Song s)
+    {
+        return title.compareTo(s.getTitle());
+    }
+
+    public String getArtist()
+    {
         return artist;
     }
 
-    public String getRating() {
+    public String getBpm()
+    {
+        return bpm;
+    }
+
+    public String getRating()
+    {
         return rating;
     }
 
-    public String getBpm() {
-        return bpm;
+    public String getTitle()
+    {
+        return title;
     }
 
     public String toString() {
         return title;
     }
+
 }
