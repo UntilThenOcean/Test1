@@ -7,7 +7,6 @@ public class Song implements Comparable <Song>
     String rating;
     String bpm;
 
-
     public Song(String t, String a, String r, String b) {
         title = t;
         artist = a;
