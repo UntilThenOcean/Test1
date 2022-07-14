@@ -1,3 +1,2 @@
-## *Hello!*
-All my codes comes from 
-the Book **< Head First Java >**  :D
+## *Head First Java*
+All my codes comes from the Book 
